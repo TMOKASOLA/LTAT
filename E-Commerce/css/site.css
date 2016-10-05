@@ -4,6 +4,7 @@ body {
     background-image: url('../images/Black-wallpaper-hd-keyboard.jpg');
     background-size: cover;
 
+
 }
 
 .nav ul {
@@ -74,7 +75,7 @@ div.desc {
    margin: 10px;
 }
 
-.box {border: 10px outset rgb(168,168,168);border-radius: 18% 18% 18% 18%;width: 1012px;height: 412px;margin-left: 25%;}
+.box {border: 10px outset #ccc;border-radius: 18% 18% 18% 18%;width: 1012px;height: 412px;margin-left: 25%;}
 
 .boxInner {
    position: absolute;
