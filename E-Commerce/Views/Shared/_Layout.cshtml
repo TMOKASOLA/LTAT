@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>@Page.Title</title>
+        @RenderSection("head", required: false)
+
+        <link href="@Url.Content("~/css/site.css")" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="nav">
+            <ul>
+                <li class="home"><a class="active" href="#">Home</a></li>
+                <li class="tutorials"><a href="#">Product</a></li>
+                <li class="about"><a href="#">About</a></li>
+                <li class="contact"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        @RenderBody()
+    </body>
+</html>

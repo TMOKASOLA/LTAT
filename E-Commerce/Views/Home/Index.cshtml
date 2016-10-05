@@ -1,0 +1,125 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div class="box">
+    <div class="slider" id="main-slider">
+        <!-- outermost container element -->
+        <div class="slider-wrapper">
+            <!-- innermost wrapper element -->
+            <img src="~/images/Canon_XLH1_HD_Camera_side_view.jpg" alt="First" class="slide" /><!-- slides -->
+            <img src="~/images/CONVNTRM_BB_ANSDI.jpg" alt="Second" class="slide" />
+            <img src="~/images/Video-camera.jpg" alt="Third" class="slide" />
+        </div>
+    </div>
+
+</div>
+
+<div class="galary">
+    <div class="img">
+        <a target="_blank" href="~/images/90a7716833b198f1250ccbe9b8150ad0.jpg" width="300" height="200">
+
+            <img src="~/images/Canon_XLH1_HD_Camera_side_view.jpg" alt="Canon" width="300" height="200" />
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+
+    <div class="img">
+        <a target="_blank" href="~/images/thPYQIZU3D.jpg" width="300" height="200">
+            <img src="~/images/thPYQIZU3D.jpg" alt="Forest" width="300" height="200">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+
+    <div class="img">
+        <a target="_blank" href="~/images/s100_qv1000c_9182.jpg" width="300" height="200">
+            <img src="~/images/s100_qv1000c_9182.jpg" alt="Northern Lights" width="300" height="200">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+    <div class="img">
+        <a target="_blank" href="~/images/th1N1SJ207.jpg" width="300" height="200">
+            <img src="~/images/th1N1SJ207.jpg" alt="Forest" width="300" height="200">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+
+    <div class="img" >
+        <a target="_blank" href="~/images/188110.jpg" width="300" height="200">
+            <img src="~/images/188110.jpg" alt="Northern Lights" width="300" height="200">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+</div>
+
+<script>
+    (function () {
+
+        function Slideshow(element) {
+            this.el = document.querySelector(element);
+            this.init();
+        }
+
+        Slideshow.prototype = {
+            init: function () {
+                this.wrapper = this.el.querySelector(".slider-wrapper");
+                this.slides = this.el.querySelectorAll(".slide");
+                this.previous = this.el.querySelector(".slider-previous");
+                this.next = this.el.querySelector(".slider-next");
+                this.index = 0;
+                this.total = this.slides.length;
+                this.timer = null;
+
+                this.action();
+                this.stopStart();
+            },
+            _slideTo: function (slide) {
+                var currentSlide = this.slides[slide];
+                currentSlide.style.opacity = 1;
+
+                for (var i = 0; i < this.slides.length; i++) {
+                    var slide = this.slides[i];
+                    if (slide !== currentSlide) {
+                        slide.style.opacity = 0;
+                    }
+                }
+            },
+            action: function () {
+                var self = this;
+                self.timer = setInterval(function () {
+                    self.index++;
+                    if (self.index == self.slides.length) {
+                        self.index = 0;
+                    }
+                    self._slideTo(self.index);
+
+                }, 3000);
+            },
+            stopStart: function () {
+                var self = this;
+                self.el.addEventListener("mouseover", function () {
+                    clearInterval(self.timer);
+                    self.timer = null;
+
+                }, false);
+                self.el.addEventListener("mouseout", function () {
+                    self.action();
+
+                }, false);
+            }
+
+
+        };
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            var slider = new Slideshow("#main-slider");
+
+        });
+
+
+    })();
+
+</script>
