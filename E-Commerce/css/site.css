@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('../images/dark-user-interface-design.jpg');
+    background-image: url('../images/Black-wallpaper-hd-keyboard.jpg');
     background-size: cover;
 
 }
@@ -74,7 +74,7 @@ div.desc {
    margin: 10px;
 }
 
-.box {border: 10px outset rgba(218, 156, 18, 0.82);border-radius: 18% 18% 18% 18%;width: 1012px;height: 412px;margin-left: 25%;}
+.box {border: 10px outset rgb(168,168,168);border-radius: 18% 18% 18% 18%;width: 1012px;height: 412px;margin-left: 25%;}
 
 .boxInner {
    position: absolute;

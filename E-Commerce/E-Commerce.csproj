@@ -123,6 +123,7 @@
     <Content Include="images\188110.jpg" />
     <Content Include="images\90a7716833b198f1250ccbe9b8150ad0.jpg" />
     <Content Include="images\AGCO-Solo-Drone.jpg" />
+    <Content Include="images\Black-wallpaper-hd-keyboard.jpg" />
     <Content Include="images\camcorder-against-white.jpg" />
     <Content Include="images\Canon_XLH1_HD_Camera_side_view.jpg" />
     <Content Include="images\CONVNTRM_BB_ANSDI.jpg" />
@@ -145,6 +146,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ProductInformation.cs" />
+    <Compile Include="Models\ProductModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -165,7 +168,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
