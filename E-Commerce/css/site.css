@@ -1,4 +1,4 @@
-﻿body {
+body {
     margin: 0;
     padding: 0;
     background-image: url('../images/dark-user-interface-design.jpg');
@@ -34,32 +34,6 @@ div.desc {
      text-align: center;
 }
 
-.nav li {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.2em;
-  line-height: 40px;
-  height: 40px;
-  border-bottom: 1px solid #888;
-}
- 
-.nav a {
-  text-decoration: none;
-  color: #fff;
-  display: block;
-  transition: .3s background-color;
-}
- 
-.nav a:hover {
-  background-color: #005f5f;
-}
- 
-.nav a.active {
-  background-color: #fff;
-  color: #444;
-  cursor: default;
-}
- 
-
 
 .slider {
 	width: 1024px;
@@ -76,13 +50,12 @@ div.desc {
 .slide {
 	float: left;
 	position: absolute;
-	width: 1000px;
-	height: 100%;
-	opacity: 0;
+	width: 994px;
+	height: 97%;
 	transition: opacity 3s linear;
-   
-  border: 5px outset #FFFFFF; 
-  border-radius:21% 22% 24% 20%; 
+	border: 10px outset black;
+	border-radius: 19% 19% 19% 19%;
+	bottom: 22px;
 }
 }
 
@@ -101,13 +74,7 @@ div.desc {
    margin: 10px;
 }
 
-.box { 
-border: 10px outset rgba(218, 156, 18, 0.82);
-    border-radius: 17% 18% 18% 19%;
-    width: 1000px;
-    height: 600px;
-    margin-left: 25%;
-}
+.box {border: 10px outset rgba(218, 156, 18, 0.82);border-radius: 18% 18% 18% 18%;width: 1012px;height: 412px;margin-left: 25%;}
 
 .boxInner {
    position: absolute;

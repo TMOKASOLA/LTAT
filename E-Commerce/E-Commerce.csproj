@@ -118,6 +118,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\site.css" />
+    <Content Include="css\styles.css" />
     <Content Include="Global.asax" />
     <Content Include="images\188110.jpg" />
     <Content Include="images\90a7716833b198f1250ccbe9b8150ad0.jpg" />

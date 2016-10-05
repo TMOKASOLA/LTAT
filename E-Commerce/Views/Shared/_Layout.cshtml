@@ -5,16 +5,24 @@
         @RenderSection("head", required: false)
 
         <link href="@Url.Content("~/css/site.css")" rel="stylesheet" type="text/css" />
-    </head>
+        <link href="@Url.Content("~/css/styles.css")" rel="stylesheet" type="text/css"/>
+        </head>
     <body>
-        <div class="nav">
-            <ul>
-                <li class="home"><a class="active" href="#">Home</a></li>
-                <li class="tutorials"><a href="#">Product</a></li>
-                <li class="about"><a href="#">About</a></li>
-                <li class="contact"><a href="#">Contact</a></li>
-            </ul>
-        </div>
+        <div class="wrapper">
+            <div class="container">
+                <ul class="menu" rel="sam1">
+                    <li class="active"><a href="http://insicdesigns.com">Home</a></li>
+
+                    <li><a href="http://insicdesigns.com">About</a></li>
+                    <li><a href="http://insicdesigns.com">Blog</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contacts</a></li>
+                
+
+                </ul>
+         </div>
+            </div>
         @RenderBody()
     </body>
 </html>
