@@ -47,10 +47,11 @@ namespace E_Commerce.Models
             myList.Add(prod3);
 
             prod4.Name = "Canon EOS 50D";
-            prod4.Description= "The 50D's 15.1 megapixels also includes excellent high-ISO performance.";
-            prod4.Price =4.689;
+            prod4.Description = "The 50D's 15.1 megapixels also includes excellent high-ISO performance.";
+            prod4.Price = 4.689;
             prod4.FullInformation = "Photography Backdrops are an amazing thing that is used for decoration purpose. Different scenes printed Photography Backdrops are available to make it much more attractive. There is a design of Photography Backdrops that is Rose House Pattern Waterproof Photography Studio Backdrop 16.40×9.84ft which is very attractively designed.";
-      
+            prod4.imageUrl = "~/images/ZBEAUTY2.jpg";
+            myList.Add(prod4);
 
         }
 

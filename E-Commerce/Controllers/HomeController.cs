@@ -23,7 +23,7 @@ namespace E_Commerce.Controllers
         }
         public ActionResult Contacts()
         {
-            return View("Contacts");
+            return View();
         }
         public ActionResult ProductDetail()
         {
