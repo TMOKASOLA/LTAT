@@ -1,8 +1,26 @@
-﻿
+﻿@model E_Commerce.Models.ProductModel
+
 @{
     ViewBag.Title = "ProductDetail";
-    <div class="desc">@Html.ActionLink("View Details", "ViewDetails", new { Name = item.imageUrl })</div>
 }
 
-<h2>Catalog</h2>
+<h2>ProductDetail</h2>
 
+<div>
+    <h4>ProductModel</h4>
+
+    <div class="imgd">
+
+        <img src="@Url.Content(Model.imageUrl)" class="imgDetail" />
+
+        <div class="descs">@Html.DisplayFor(modelItem => Model.Name)</div>
+        <div class="descs">@Html.DisplayFor(modelItem => Model.Description)</div>
+        <div class="descs">@Html.DisplayFor(modelItem => Model.FullInformation)</div>
+        <div class="descs">@Html.DisplayFor(modelItem => Model.Price)</div>
+    </div>
+
+</div>
+<p>
+ 
+    @Html.ActionLink("Back to List", "Products")
+</p>

@@ -25,9 +25,15 @@ namespace E_Commerce.Controllers
         {
             return View();
         }
-        public ActionResult ProductDetail()
+        public ActionResult ProductDetail(string Name)
         {
-            return View("ProductDetail");
+            ProductModel prod = null;
+
+            prod= information.getProductInfo(Name);
+
+
+
+            return View(prod);
         }
         
         public ActionResult About()

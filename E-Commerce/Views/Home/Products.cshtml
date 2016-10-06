@@ -12,16 +12,17 @@
     @Html.ActionLink("Create New", "Create")
 </p>
 
+<div class="cont">
+    @foreach (var item in Model)
+    {
+        <div class="img">
 
-@foreach (var item in Model)
-{
-    <div class="img">
+            <img src="@Url.Content(@item.imageUrl)" />
 
-        <img src="@Url.Content(@item.imageUrl)" />
-
-        <div class="desc">@Html.DisplayFor(modelItem => item.Name)</div>
-        <div class="desc">@Html.ActionLink("View Details", "ViewDetails", new { Name = item.imageUrl })</div>
-    </div>
+            <div class="desc">@Html.DisplayFor(modelItem => item.Name)</div>
+            <div class="desc">@Html.ActionLink("View Details", "ProductDetail", new { Name = item.imageUrl })</div>
+        </div>
 
 
-}
+    }
+</div>

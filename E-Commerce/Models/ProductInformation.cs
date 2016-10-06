@@ -56,7 +56,7 @@ namespace E_Commerce.Models
 
             prod5.Name = "Canon EOS 50D";
             prod5.Description = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera";
-            prod5.Price = 4.689;
+            prod5.Price = 8.689;
             prod5.FullInformation = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera Up to 1.2 Mile Radio Range GPS - Based Flight Control System Vision Positioning for Indoor Flying Live 720p HD Monitoring with Lightbridge Thrust - Boosted Motors / New Propellers Retractable Carbon Fiber Arms  Unobstructed 360o Shooting";
             prod5.imageUrl = "~/images/header.jpg";
             myList.Add(prod5);
@@ -70,7 +70,7 @@ namespace E_Commerce.Models
 
             foreach (ProductModel item in myList)
             {
-                if (name == item.Name)
+                if (name == item.imageUrl)
                 {
                     product = item;
                 }

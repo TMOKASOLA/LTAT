@@ -9,6 +9,7 @@
     position: relative;
     margin-bottom: 30px;
     /* left: -511px; */
+    opacity: 0.5;
 }
 
 .title {
