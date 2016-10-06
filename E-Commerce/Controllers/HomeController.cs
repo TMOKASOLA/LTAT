@@ -21,5 +21,10 @@ namespace E_Commerce.Controllers
             
             return View(information.myList);
         }
+        public ActionResult Contacts()
+        {
+            return View("Contacts");
+        }
+
     }
 }
