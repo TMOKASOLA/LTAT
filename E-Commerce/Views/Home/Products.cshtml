@@ -1,0 +1,25 @@
+﻿@model IEnumerable<E_Commerce.Models.ProductModel>
+
+@{
+    ViewBag.Title = "Products";
+}
+
+<h2>Products</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+
+@foreach (var item in Model)
+{
+    <div class="img">
+
+        <img src="@Url.Content(@item.imageUrl)" />
+
+        <div class="desc">@Html.DisplayFor(modelItem => item.Name)</div>
+        <div class="desc">@Html.ActionLink("View Details", "ViewDetails", new { Name = item.imageUrl })</div>
+    </div>
+
+
+}
