@@ -41,9 +41,9 @@ _UpgradeReport_Files/
 ###############
 # Directories #
 ###############
-ProjectMVC/bin/
-ProjectMVC/obj/
-ProjectMVC/TestResults/
+ProjectMVC/bin
+ProjectMVC/obj
+ProjectMVC/TestResults
 ###################
 # Web publish log #
 ###################
