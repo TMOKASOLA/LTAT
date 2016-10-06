@@ -25,6 +25,21 @@ namespace E_Commerce.Models
             ProductModel prod3 = new ProductModel();
             ProductModel prod4 = new ProductModel();
             ProductModel prod5 = new ProductModel();
+            ProductModel prod6 = new ProductModel();
+            ProductModel prod7 = new ProductModel();
+            ProductModel prod8 = new ProductModel();
+            ProductModel prod9 = new ProductModel();
+            ProductModel prod10 = new ProductModel();
+            ProductModel prod11 = new ProductModel();
+            ProductModel prod12 = new ProductModel();
+            ProductModel prod13 = new ProductModel();
+            ProductModel prod14 = new ProductModel();
+            ProductModel prod15 = new ProductModel();
+            ProductModel prod16 = new ProductModel();
+            ProductModel prod17 = new ProductModel();
+            ProductModel prod18 = new ProductModel();
+            ProductModel prod19 = new ProductModel();
+            ProductModel prod20 = new ProductModel();
 
             prod.Name = "AGCO-Solo-Drone";
             prod.Description = "EDITION Unmanned Aerial Vehicle (UAV)";
@@ -61,7 +76,119 @@ namespace E_Commerce.Models
             prod5.imageUrl = "~/images/header.jpg";
             myList.Add(prod5);
 
-  
+            prod6.Name = "Canon EOS 50D";
+            prod6.Description = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera";
+            prod6.Price = 4.689;
+            prod6.FullInformation = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera Up to 1.2 Mile Radio Range GPS - Based Flight Control System Vision Positioning for Indoor Flying Live 720p HD Monitoring with Lightbridge Thrust - Boosted Motors / New Propellers Retractable Carbon Fiber Arms  Unobstructed 360o Shooting";
+            prod6.imageUrl = "~/images/header.jpg";
+            myList.Add(prod6);
+
+            prod7.Name = "Canon EOS 50D";
+            prod7.Description = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera";
+            prod7.Price = 4.689;
+            prod7.FullInformation = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera Up to 1.2 Mile Radio Range GPS - Based Flight Control System Vision Positioning for Indoor Flying Live 720p HD Monitoring with Lightbridge Thrust - Boosted Motors / New Propellers Retractable Carbon Fiber Arms  Unobstructed 360o Shooting";
+            prod7.imageUrl = "~/images/header.jpg";
+            myList.Add(prod7);
+
+            prod8.Name = "Canon EOS 50D";
+            prod8.Description = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera";
+            prod8.Price = 4.689;
+            prod8.FullInformation = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera Up to 1.2 Mile Radio Range GPS - Based Flight Control System Vision Positioning for Indoor Flying Live 720p HD Monitoring with Lightbridge Thrust - Boosted Motors / New Propellers Retractable Carbon Fiber Arms  Unobstructed 360o Shooting";
+            prod8.imageUrl = "~/images/header.jpg";
+            myList.Add(prod8);
+
+            prod9.Name = "Canon EOS 50D";
+            prod9.Description = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera";
+            prod9.Price = 4.689;
+            prod9.FullInformation = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera Up to 1.2 Mile Radio Range GPS - Based Flight Control System Vision Positioning for Indoor Flying Live 720p HD Monitoring with Lightbridge Thrust - Boosted Motors / New Propellers Retractable Carbon Fiber Arms  Unobstructed 360o Shooting";
+            prod9.imageUrl = "~/images/header.jpg";
+            myList.Add(prod9);
+
+            prod10.Name = "Canon EOS 50D";
+            prod10.Description = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera";
+            prod10.Price = 4.689;
+            prod10.FullInformation = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera Up to 1.2 Mile Radio Range GPS - Based Flight Control System Vision Positioning for Indoor Flying Live 720p HD Monitoring with Lightbridge Thrust - Boosted Motors / New Propellers Retractable Carbon Fiber Arms  Unobstructed 360o Shooting";
+            prod10.imageUrl = "~/images/header.jpg";
+            myList.Add(prod10);
+
+            prod10.Name = "Canon EOS 50D";
+            prod10.Description = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera";
+            prod10.Price = 4.689;
+            prod10.FullInformation = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera Up to 1.2 Mile Radio Range GPS - Based Flight Control System Vision Positioning for Indoor Flying Live 720p HD Monitoring with Lightbridge Thrust - Boosted Motors / New Propellers Retractable Carbon Fiber Arms  Unobstructed 360o Shooting";
+            prod10.imageUrl = "~/images/header.jpg";
+            myList.Add(prod10);
+
+            prod11.Name = "Canon EOS 50D";
+            prod11.Description = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera";
+            prod11.Price = 4.689;
+            prod11.FullInformation = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera Up to 1.2 Mile Radio Range GPS - Based Flight Control System Vision Positioning for Indoor Flying Live 720p HD Monitoring with Lightbridge Thrust - Boosted Motors / New Propellers Retractable Carbon Fiber Arms  Unobstructed 360o Shooting";
+            prod11.imageUrl = "~/images/header.jpg";
+            myList.Add(prod11);
+
+            prod12.Name = "Canon EOS 50D";
+            prod12.Description = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera";
+            prod12.Price = 4.689;
+            prod12.FullInformation = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera Up to 1.2 Mile Radio Range GPS - Based Flight Control System Vision Positioning for Indoor Flying Live 720p HD Monitoring with Lightbridge Thrust - Boosted Motors / New Propellers Retractable Carbon Fiber Arms  Unobstructed 360o Shooting";
+            prod12.imageUrl = "~/images/header.jpg";
+            myList.Add(prod12);
+
+            prod13.Name = "Canon EOS 50D";
+            prod13.Description = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera";
+            prod13.Price = 4.689;
+            prod13.FullInformation = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera Up to 1.2 Mile Radio Range GPS - Based Flight Control System Vision Positioning for Indoor Flying Live 720p HD Monitoring with Lightbridge Thrust - Boosted Motors / New Propellers Retractable Carbon Fiber Arms  Unobstructed 360o Shooting";
+            prod13.imageUrl = "~/images/header.jpg";
+            myList.Add(prod13);
+
+            prod14.Name = "Canon EOS 50D";
+            prod14.Description = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera";
+            prod14.Price = 4.689;
+            prod14.FullInformation = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera Up to 1.2 Mile Radio Range GPS - Based Flight Control System Vision Positioning for Indoor Flying Live 720p HD Monitoring with Lightbridge Thrust - Boosted Motors / New Propellers Retractable Carbon Fiber Arms  Unobstructed 360o Shooting";
+            prod14.imageUrl = "~/images/header.jpg";
+            myList.Add(prod14);
+
+            prod15.Name = "Canon EOS 50D";
+            prod15.Description = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera";
+            prod15.Price = 4.689;
+            prod15.FullInformation = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera Up to 1.2 Mile Radio Range GPS - Based Flight Control System Vision Positioning for Indoor Flying Live 720p HD Monitoring with Lightbridge Thrust - Boosted Motors / New Propellers Retractable Carbon Fiber Arms  Unobstructed 360o Shooting";
+            prod15.imageUrl = "~/images/header.jpg";
+            myList.Add(prod15);
+
+            prod16.Name = "Canon EOS 50D";
+            prod16.Description = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera";
+            prod16.Price = 4.689;
+            prod16.FullInformation = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera Up to 1.2 Mile Radio Range GPS - Based Flight Control System Vision Positioning for Indoor Flying Live 720p HD Monitoring with Lightbridge Thrust - Boosted Motors / New Propellers Retractable Carbon Fiber Arms  Unobstructed 360o Shooting";
+            prod16.imageUrl = "~/images/header.jpg";
+            myList.Add(prod16);
+
+            prod17.Name = "Canon EOS 50D";
+            prod17.Description = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera";
+            prod17.Price = 4.689;
+            prod17.FullInformation = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera Up to 1.2 Mile Radio Range GPS - Based Flight Control System Vision Positioning for Indoor Flying Live 720p HD Monitoring with Lightbridge Thrust - Boosted Motors / New Propellers Retractable Carbon Fiber Arms  Unobstructed 360o Shooting";
+            prod17.imageUrl = "~/images/header.jpg";
+            myList.Add(prod17);
+
+            prod18.Name = "Canon EOS 50D";
+            prod18.Description = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera";
+            prod18.Price = 4.689;
+            prod18.FullInformation = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera Up to 1.2 Mile Radio Range GPS - Based Flight Control System Vision Positioning for Indoor Flying Live 720p HD Monitoring with Lightbridge Thrust - Boosted Motors / New Propellers Retractable Carbon Fiber Arms  Unobstructed 360o Shooting";
+            prod18.imageUrl = "~/images/header.jpg";
+            myList.Add(prod18);
+
+            prod19.Name = "Canon EOS 50D";
+            prod19.Description = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera";
+            prod19.Price = 4.689;
+            prod19.FullInformation = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera Up to 1.2 Mile Radio Range GPS - Based Flight Control System Vision Positioning for Indoor Flying Live 720p HD Monitoring with Lightbridge Thrust - Boosted Motors / New Propellers Retractable Carbon Fiber Arms  Unobstructed 360o Shooting";
+            prod19.imageUrl = "~/images/header.jpg";
+            myList.Add(prod19);
+
+            prod20.Name = "Canon EOS 50D";
+            prod20.Description = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera";
+            prod20.Price = 4.689;
+            prod20.FullInformation = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera Up to 1.2 Mile Radio Range GPS - Based Flight Control System Vision Positioning for Indoor Flying Live 720p HD Monitoring with Lightbridge Thrust - Boosted Motors / New Propellers Retractable Carbon Fiber Arms  Unobstructed 360o Shooting";
+            prod20.imageUrl = "~/images/header.jpg";
+            myList.Add(prod20);
+
+
         }
 
         public ProductModel getProductInfo(string name)
