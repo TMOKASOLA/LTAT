@@ -24,6 +24,7 @@ namespace E_Commerce.Models
             ProductModel prod2 = new ProductModel();
             ProductModel prod3 = new ProductModel();
             ProductModel prod4 = new ProductModel();
+            ProductModel prod5 = new ProductModel();
 
             prod.Name = "AGCO-Solo-Drone";
             prod.Description = "EDITION Unmanned Aerial Vehicle (UAV)";
@@ -36,7 +37,7 @@ namespace E_Commerce.Models
             prod2.Description = "An HDD camcorder is a video camera that uses an internal hard drive instead of a tapePicture";
             prod2.Price= 37295.00;
             prod2.FullInformation = "It is the successor of the miniDV camera, which uses tape but already records in digital format. The advantage of the HDD camcorder is that users no longer need to upload their tapes into their computers to convert the tape into a digital file. The HDD camcorder enables users to simply copy a file from one hard drive to the other, the same way files can be copied from one to another hard drive directory.";
-            prod2.imageUrl = "~/images/camcorder-against-white.jpg";
+            prod2.imageUrl = "~/images/th1N1SJ207.jpg";
             myList.Add(prod2);
 
             prod3.Name = "Canon XLH1 HD";
@@ -53,6 +54,14 @@ namespace E_Commerce.Models
             prod4.imageUrl = "~/images/ZBEAUTY2.jpg";
             myList.Add(prod4);
 
+            prod5.Name = "Canon EOS 50D";
+            prod5.Description = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera";
+            prod5.Price = 4.689;
+            prod5.FullInformation = "Capture 4K Video and 12MP Stills 3 - Axis Gimbal Stabilizes Camera Up to 1.2 Mile Radio Range GPS - Based Flight Control System Vision Positioning for Indoor Flying Live 720p HD Monitoring with Lightbridge Thrust - Boosted Motors / New Propellers Retractable Carbon Fiber Arms  Unobstructed 360o Shooting";
+            prod5.imageUrl = "~/images/header.jpg";
+            myList.Add(prod5);
+
+  
         }
 
         public ProductModel getProductInfo(string name)

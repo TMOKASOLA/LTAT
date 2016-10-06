@@ -15,10 +15,10 @@ body {
   margin: 0;
 }
 div.img {
-     margin: 5px;
-    border: 1px solid #ccc;
+     margin: 21px;
+     border: 1px solid #ccc;
      float: left;
-     width: 180px;
+     width: 264px;
 }
 
 div.img:hover {
@@ -26,8 +26,8 @@ div.img:hover {
 }
 
 div.img img {
-     width: 100%;
-    height: auto;
+     width: 101%;
+     height: auto;
 }
 
 div.desc {
@@ -118,4 +118,11 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
     background-color: white;
     border-style: ridge;
     padding left: 5;
+}
+
+div.imgs {
+     margin: 9px;
+     border: 1px solid #ccc;
+     float: left;
+     width: 124px;
 }
