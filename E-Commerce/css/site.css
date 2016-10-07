@@ -30,9 +30,9 @@ div.img {
     }
 
 div.desc {
-    padding: 17px;
+    padding: 18px;
     text-align: center;
-    color: wheat;
+    color: #e69f1a;
 }
 
 
@@ -154,6 +154,7 @@ div.imgd {
 .imgDetail {
     margin: 0 auto;
     display: block;
+    align-content: center;
 }
 
 .cont {
@@ -174,4 +175,19 @@ font-size: x-large;
 font-weight: 900;
 
 text-decoration: underline;
+}
+.name{
+    border-bottom:2px solid #ff0000;
+    border-color:floralwhite;
+    margin:0 auto;
+    text-align:center;
+    padding:17px;
+    background-color:wheat;
+}
+.Info{
+    background-color:black;
+    background: rgba(-125, -25, -54, 0.6);
+}
+p{
+
 }
