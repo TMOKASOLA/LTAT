@@ -87,3 +87,14 @@ ul.menu li.active a{
     background: -moz-radial-gradient(center 80px 45deg, circle cover, rgba(31,169,244,1) 0%, rgba(0,28,78, 1) 100%);
 }
 
+
+/*Contact box*/
+        p.one {
+            background-color: black;
+            width: 300px;
+            height: 250px;
+            border: 10px solid silver;
+            padding: 25px;
+            margin: 25px;
+        }
+   
