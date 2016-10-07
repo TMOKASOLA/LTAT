@@ -30,7 +30,7 @@ div.img {
     }
 
 div.desc {
-    padding: 18px;
+    padding: 19px;
     text-align: center;
     color: #e69f1a;
 }
@@ -188,6 +188,17 @@ text-decoration: underline;
     background-color:black;
     background: rgba(-125, -25, -54, 0.6);
 }
-p{
+.elements{
+    width:400px;
+    height: 45px;
+}
+.msg{
 
+width: 490px;
+
+height: 200px;
+
+padding-bottom: 26px;
+
+margin-bottom: 25px;
 }

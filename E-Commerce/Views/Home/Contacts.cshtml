@@ -18,19 +18,32 @@
     <a href="mailto:LTATTechnologies@jhb.TFT.com">Ltattechnologies@jhb.ltatt.com</a><br />
 </p>
 
+    <div class="box">
+        <div class="desc">
+            <input type="text" placeholder="Enter name" name="uname" class="elements" id="uname" }>
+            <br />
 
-<div class="Pop up">
+            <input type="email" placeholder="Enter Email" name="psw" class="elements">
+            <br />
 
-    <label><b>name</b></label>
-    <input type="text" placeholder="Enter name" name="uname">
-    <br />
+            <input type="text" placeholder="Enter Message" name="msg" class="msg">
+            <br />
 
-    <label><b>Email</b></label>
-    <input type="email" placeholder="Enter Email" name="psw">
-    <br />
-    
-    <button type="submit">Submit</button>
-    
-    <br />
-   
-</div>
+            <button type="submit" style="width:150px" onclick="show_alert();">Submit</button>
+
+            <br />
+        </div>
+    </div>
+  
+    <script>
+        function show_alert() {
+
+            if (document.getElementById("uname").value == '') {
+                alert("name field is empty");
+            }
+            else if (document.getElementById("uname").onsubmit != '') {
+                alert("name field is not empty");
+            }
+
+        }
+    </script>
