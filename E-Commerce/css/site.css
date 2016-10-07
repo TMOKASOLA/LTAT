@@ -138,6 +138,7 @@ div.descs {
     text-align: center;
     color: wheat;
     margin-left: auto;
+    font-size: x-large;
 }
 
 div.imgd {
@@ -159,4 +160,18 @@ div.imgd {
     width: 960px;
     position: relative;
     margin: 0 auto;
+}
+.Details{
+
+padding: 15px 0px 0px 0px;
+
+text-align: center;
+
+color: wheat;
+
+font-size: x-large;
+
+font-weight: 900;
+
+text-decoration: underline;
 }

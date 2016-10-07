@@ -164,6 +164,7 @@
     <Content Include="Views\Home\Contacts.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\ProductDetail.cshtml" />
+    <None Include="Properties\PublishProfiles\MallEventManagement20160615025546 - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
