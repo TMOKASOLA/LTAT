@@ -202,3 +202,10 @@ padding-bottom: 26px;
 
 margin-bottom: 25px;
 }
+ footer {
+    padding: 2em;
+    color: darkorange;
+    background: rgba(119, 135, 51, 0.5);
+    clear: left;
+    text-align: center;
+}

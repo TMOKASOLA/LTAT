@@ -23,13 +23,10 @@
             <input type="text" placeholder="Enter name" name="uname" class="elements" id="uname" }>
             <br />
 
-            <input type="email" placeholder="Enter Email" name="psw" class="elements">
+            <input type="email" placeholder="Enter Email" name="email" id="email" class="elements">
             <br />
 
-            <input type="text" placeholder="Enter Message" name="msg" class="msg">
-            <br />
-
-            <button type="submit" style="width:150px" onclick="show_alert();">Submit</button>
+            <button type="submit" style="margin-top:100px;  width:150px" onclick="show_alert();">Submit</button>
 
             <br />
         </div>
@@ -40,9 +37,12 @@
 
             if (document.getElementById("uname").value == '') {
                 alert("name field is empty");
+            }else if(document.getElementById("email").value == '')
+            {
+                alert("email field is empty");
             }
-            else if (document.getElementById("uname").onsubmit != '') {
-                alert("name field is not empty");
+            else if (document.getElementById("uname").onsubmit != '' && document.getElementById("email").onsubmit != ' ') {
+                alert("Hello " + document.getElementById("uname").value + " we will email you soon at " + document.getElementById("email").value);
             }
 
         }
