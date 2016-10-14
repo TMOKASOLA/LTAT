@@ -12,6 +12,7 @@ namespace E_Commerce.Models
         public List<ProductModel> getInformation()
         {
             List<ProductModel> produc = null;
+
             addProduct();
             produc = myList;
             return produc;
@@ -20,6 +21,7 @@ namespace E_Commerce.Models
         public void addProduct()
         {
             myList.Clear();
+
             ProductModel prod = new ProductModel();
             ProductModel prod2 = new ProductModel();
             ProductModel prod3 = new ProductModel();
@@ -32,6 +34,7 @@ namespace E_Commerce.Models
             prod.Price = 5999.99;
             prod.FullInformation = "3D Robotics Solo Drone: Using the Solo's smart flying features, you don't have to be on the sidelines to capture memories — you can be a part of them, too. Choose from a variety of autopilot modes, from premapped flight paths, to orbit, lock-on-and-follow, and more. Now you can worry less about keeping the drone in the air, and focus on taking amazing footage to share with your friends and family.";
             prod.imageUrl = "~/images/AGCO-Solo-Drone.jpg";
+
             myList.Add(prod);
 
             prod2.Name = "camcorder";

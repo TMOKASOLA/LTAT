@@ -10,6 +10,7 @@ namespace E_Commerce.Controllers
     public class HomeController : Controller
     {
        static ProductInformation information = new ProductInformation();
+
         // GET: Home
         public ActionResult Index()
         {
