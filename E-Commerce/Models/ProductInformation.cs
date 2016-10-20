@@ -21,7 +21,7 @@ namespace E_Commerce.Models
         public void addProduct()
         {
             myList.Clear();
-
+          
             ProductModel prod = new ProductModel();
             ProductModel prod2 = new ProductModel();
             ProductModel prod3 = new ProductModel();
