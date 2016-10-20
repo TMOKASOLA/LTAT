@@ -92,9 +92,11 @@ ul.menu li.active a{
         p.one {
             background-color: black;
             width: 300px;
-            height: 250px;
+            height: 420px;
             border: 10px solid silver;
             padding: 25px;
             margin: 25px;
+            /*padding-left:300px;*/
+            margin:0 auto;
         }
    
