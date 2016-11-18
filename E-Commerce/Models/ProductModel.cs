@@ -12,5 +12,10 @@ namespace E_Commerce.Models
         public double Price { get; set; }
         public string FullInformation { get; set; }
         public string imageUrl { get; set; }
+
+        public static explicit operator List<object>(ProductModel v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

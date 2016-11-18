@@ -127,8 +127,10 @@
     <Content Include="images\Black-wallpaper-hd-keyboard.jpg" />
     <Content Include="images\camcorder-against-white.jpg" />
     <Content Include="images\Canon_XLH1_HD_Camera_side_view.jpg" />
+    <Content Include="images\Cart1.png" />
     <Content Include="images\CONVNTRM_BB_ANSDI.jpg" />
     <Content Include="images\dark-user-interface-design.jpg" />
+    <Content Include="images\Cart.png" />
     <Content Include="images\Facebook-Surround-360.jpg" />
     <Content Include="images\GC-PX10-Rear.jpg" />
     <Content Include="images\header.jpg" />
@@ -150,6 +152,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Cart.cs" />
+    <Compile Include="Models\CartModel.cs" />
     <Compile Include="Models\ProductInformation.cs" />
     <Compile Include="Models\ProductModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -168,6 +172,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\ProductDetail.cshtml" />
     <None Include="Properties\PublishProfiles\MallEventManagement20160615025546 - Web Deploy.pubxml" />
+    <Content Include="Views\Home\showResults.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

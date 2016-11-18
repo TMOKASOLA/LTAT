@@ -5,17 +5,22 @@
    
 }
     <h1 style="text-align:center; color:silver;">Products</h1>
+
+<div class="cart"><a href="/Home/ShowResults"><img src="~/images/Cart.png" alt="cart" /></a>@ViewBag.Cart</div>
+
 <div class="cont">
     @foreach (var item in Model)
-    {
+    {    
+       
         <div class="img">
-
+           
             <img src="@Url.Content(@item.imageUrl)" />
 
             <div class="desc">@Html.DisplayFor(modelItem => item.Name)</div>
-            <div class="desc">@Html.ActionLink("View Details", "ProductDetail", new { Name = item.imageUrl })</div>
-        </div>
-
+            <div class="desc">@Html.DisplayFor(modelItem => item.Price)</div>
+            <div class="desc">@Html.ActionLink("View Details", "ProductDetail", new { Name = item.imageUrl })</div>          
+            <div class="desc">@Html.ActionLink("Add to Cart", "addCart", new { Name = item.imageUrl })</div>        
+         </div>
 
     }
 </div>

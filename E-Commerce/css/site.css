@@ -13,6 +13,7 @@ body {
     margin: 0;
 }
 
+
 div.img {
     margin: 21px;
     border: 1px solid #ccc;
@@ -24,10 +25,13 @@ div.img {
         border: 1px solid #777;
     }
 
+
     div.img img {
         width: 101%;
         height: auto;
     }
+
+
 
 div.desc {
     padding: 19px;
@@ -162,50 +166,52 @@ div.imgd {
     position: relative;
     margin: 0 auto;
 }
-.Details{
 
-padding: 15px 0px 0px 0px;
-
-text-align: center;
-
-color: wheat;
-
-font-size: x-large;
-
-font-weight: 900;
-
-text-decoration: underline;
+.Details {
+    padding: 15px 0px 0px 0px;
+    text-align: center;
+    color: wheat;
+    font-size: x-large;
+    font-weight: 900;
+    text-decoration: underline;
 }
-.name{
-    border-bottom:2px solid #ff0000;
-    border-color:floralwhite;
-    margin:0 auto;
-    text-align:center;
-    padding:17px;
-    background-color:wheat;
+
+.name {
+    border-bottom: 2px solid #ff0000;
+    border-color: floralwhite;
+    margin: 0 auto;
+    text-align: center;
+    padding: 17px;
+    background-color: wheat;
 }
-.Info{
-    background-color:black;
+
+.Info {
+    background-color: black;
     background: rgba(-125, -25, -54, 0.6);
 }
-.elements{
-    width:400px;
+
+.elements {
+    width: 400px;
     height: 45px;
 }
-.msg{
 
-width: 490px;
-
-height: 200px;
-
-padding-bottom: 26px;
-
-margin-bottom: 25px;
+.msg {
+    width: 490px;
+    height: 200px;
+    padding-bottom: 26px;
+    margin-bottom: 25px;
 }
- footer {
+
+footer {
     padding: 2em;
     color: silver;
     background: #1f282f;
     clear: left;
     text-align: center;
+}
+
+.cart img {
+    width: 101px;
+    height: auto;
+    margin-left: 1300px;
 }

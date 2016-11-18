@@ -21,14 +21,14 @@ namespace E_Commerce.Models
         public void addProduct()
         {
             myList.Clear();
-          
+
             ProductModel prod = new ProductModel();
             ProductModel prod2 = new ProductModel();
             ProductModel prod3 = new ProductModel();
             ProductModel prod4 = new ProductModel();
             ProductModel prod5 = new ProductModel();
             ProductModel prod6 = new ProductModel();
-           
+
             prod.Name = "AGCO-Solo-Drone";
             prod.Description = "EDITION Unmanned Aerial Vehicle (UAV)";
             prod.Price = 5999.99;
@@ -39,7 +39,7 @@ namespace E_Commerce.Models
 
             prod2.Name = "camcorder";
             prod2.Description = "An HDD camcorder is a video camera that uses an internal hard drive instead of a tapePicture";
-            prod2.Price= 37295.00;
+            prod2.Price = 37295.00;
             prod2.FullInformation = "It is the successor of the miniDV camera, which uses tape but already records in digital format. The advantage of the HDD camcorder is that users no longer need to upload their tapes into their computers to convert the tape into a digital file. The HDD camcorder enables users to simply copy a file from one hard drive to the other, the same way files can be copied from one to another hard drive directory.";
             prod2.imageUrl = "~/images/th1N1SJ207.jpg";
             myList.Add(prod2);
@@ -72,10 +72,11 @@ namespace E_Commerce.Models
             prod6.imageUrl = "~/images/header.jpg";
             myList.Add(prod6);
 
-           
+
 
 
         }
+
 
         public ProductModel getProductInfo(string name)
         {
@@ -91,5 +92,7 @@ namespace E_Commerce.Models
             }
             return product;
         }
+
+
     }
 }
