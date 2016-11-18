@@ -12,19 +12,24 @@ namespace E_Commerce.Controllers
         static ProductInformation information = new ProductInformation();
         Cart cart = new Cart();
         ProductModel[] prod = new ProductModel[50];
-       static CartModel cartmod = new CartModel();
+        static CartModel cartmod = new CartModel();
         static int recIndex = 0;
 
         // GET: Home
         public ActionResult Index()
         {
-        
+
 
             return View();
         }
         public ActionResult Products()
         {
             information.addProduct();
+
+            if (Session["NumItems"] != null)
+            {
+                ViewBag.Cart = Session["NumItems"].ToString();
+            }
 
             return View(information.myList);
         }
@@ -38,7 +43,7 @@ namespace E_Commerce.Controllers
 
             prod = information.getProductInfo(Name);
 
-
+         
 
             return View(prod);
         }
@@ -56,7 +61,7 @@ namespace E_Commerce.Controllers
 
             //check if session exist
             //if it does, get your cart from the list
-        
+
 
 
             if (Session["cart"] == null)
@@ -64,10 +69,8 @@ namespace E_Commerce.Controllers
                 Session["cart"] = cartmod;
             }
 
-            List<Cart> items = Session["cart"] as List<Cart>;
-           
             prod[recIndex] = information.getProductInfo(Name);
-            
+
 
             cart.Name = prod[recIndex].Name;
             cart.Description = prod[recIndex].Description;
@@ -76,30 +79,51 @@ namespace E_Commerce.Controllers
 
             cartmod.addToCart(cart);
 
-            ViewBag.Cart = cartmod.cartInfo.Count();
-
-        //    items.Add(cart);
+            Session["NumItems"] = cartmod.cartInfo.Count();
+            ViewBag.Cart = Session["NumItems"].ToString();
 
             Session["cart"] = cartmod;
             recIndex++;
 
+            var list = Session["cart"] as CartModel;
             return View("Products", information.myList);
 
-            /*List<int> list = Session["list"] as List<int>;
-            if (list == null)
-            {
-                list = new List<int>();
-                list.AddRange(Enumerable.Range(1, 100));
-                Session["list"] = list;
-            }*/
+
         }
 
         public ActionResult showResults()
         {
             var list = Session["cart"] as CartModel;
 
-          
+
             return View(list.cartInfo);
+        }
+
+        
+        public ActionResult RemoveItem(string Name)
+        {
+            var list = Session["cart"] as CartModel;
+            int count = 0;
+            int index = 0;
+            foreach (var items in list.cartInfo)
+            {
+                if (items.Name==Name)
+                {
+                     index = count;
+                   
+                }
+                count++;
+            }
+
+            list.cartInfo.RemoveAt(index);
+            //Session["cart"] = cartmod;
+            //list = Session["cart"] as CartModel;
+
+            Session["cart"] = cartmod;
+            Session["NumItems"] = cartmod.cartInfo.Count();
+
+
+            return View("showResults", list.cartInfo);
         }
     }
 }
