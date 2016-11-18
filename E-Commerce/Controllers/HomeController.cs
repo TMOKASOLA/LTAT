@@ -14,7 +14,7 @@ namespace E_Commerce.Controllers
         ProductModel[] prod = new ProductModel[50];
         static CartModel cartmod = new CartModel();
         static int recIndex = 0;
-
+        double total = 0;
         // GET: Home
         public ActionResult Index()
         {
@@ -95,6 +95,15 @@ namespace E_Commerce.Controllers
         {
             var list = Session["cart"] as CartModel;
 
+         
+
+            foreach (var item in list.cartInfo)
+            {
+                total = total+ Convert.ToDouble(item.Price);
+            }
+            Session["total"] = total.ToString();
+
+            @ViewBag.Total = Session["total"];
 
             return View(list.cartInfo);
         }
@@ -116,12 +125,21 @@ namespace E_Commerce.Controllers
             }
 
             list.cartInfo.RemoveAt(index);
+
+            foreach (var items in list.cartInfo)
+            {
+                total = total + Convert.ToDouble(items.Price);
+            }
+           
             //Session["cart"] = cartmod;
             //list = Session["cart"] as CartModel;
 
             Session["cart"] = cartmod;
             Session["NumItems"] = cartmod.cartInfo.Count();
 
+            Session["total"] = total;
+
+            @ViewBag.Total = Session["total"];
 
             return View("showResults", list.cartInfo);
         }
