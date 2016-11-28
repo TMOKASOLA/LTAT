@@ -4,13 +4,10 @@
     ViewBag.Title = "showResults";
 }
 
-<h2>showResults</h2>
+<h2>View Cart</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
+<table style="background:#020221; margin-left:700px;" class="table">
+    <tr style="color:white">
         <th>
             @Html.DisplayNameFor(model => model.Name)
         </th>
@@ -24,7 +21,7 @@
     </tr>
 
 @foreach (var item in Model) {
-    <tr>
+    <tr style="color:white">
         <td>
             @Html.DisplayFor(modelItem => item.Name)
         </td>
