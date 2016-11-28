@@ -112,6 +112,7 @@ namespace E_Commerce.Controllers
         public ActionResult RemoveItem(string Name)
         {
             var list = Session["cart"] as CartModel;
+
             int count = 0;
             int index = 0;
             foreach (var items in list.cartInfo)
