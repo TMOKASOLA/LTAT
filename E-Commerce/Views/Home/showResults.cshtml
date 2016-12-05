@@ -4,17 +4,18 @@
     ViewBag.Title = "showResults";
 }
 
-<h2>View Cart</h2>
+<h2 class="desc">Cart Items</h2>
 
-<table style="background:#020221; margin-left:700px;" class="table">
+<table style="background:#020221; margin-left:80px;" class="table">
     <tr style="color:white">
-        <th>
+        <th width="25%">
             @Html.DisplayNameFor(model => model.Name)
         </th>
-        <th>
+        <th width="15%">
             @Html.DisplayNameFor(model => model.Price)
         </th>
-        <th>
+   
+        <th width="5%">
             @Html.DisplayNameFor(model => model.Quantity)
         </th>
         <th></th>
@@ -22,16 +23,17 @@
 
 @foreach (var item in Model) {
     <tr style="color:white">
-        <td>
+        <td width="25%">
             @Html.DisplayFor(modelItem => item.Name)
         </td>
-        <td>
+        <td width="15%">
             @Html.DisplayFor(modelItem => item.Price)
         </td>
-        <td>
+ 
+        <td width="5%">
             @Html.DisplayFor(modelItem => item.Quantity)
         </td>
-        <td>
+        <td width="5%">
             <div class="desc">@Html.ActionLink("Remove Item", "RemoveItem", new { Name = item.Name})</div>  
         </td>
     </tr>
