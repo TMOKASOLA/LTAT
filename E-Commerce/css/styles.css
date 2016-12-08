@@ -50,23 +50,24 @@ ul.menu {
             padding: 0;
             display:block;
             width:450px;
+           
         }
 
 ul.menu li {
     list-style: none;
     height: 79px;
     display:inline-block;
+    margin:auto;
     background: -webkit-gradient(radial, 50% 100%, 10, 50% 50%, 90, from(rgb(79, 88, 93)), to(rgba(0,28,78, 1)) );
     background: -moz-radial-gradient(center 80px 45deg, circle cover, rgba(31,169,244,1) 0%, rgba(0,28,78, 1) 100%);
     }
 
 ul.menu li a {
-        padding: 0 20px;
+        padding: 0 19px;
         border-left: 2px solid rgba(255,255,255,0.1);
         border-right: 1px solid rgba(0,0,0,0.1);
         text-align: center;
         line-height: 79px;
-   
         background : -moz-linear-gradient(top, rgb(168,168,168), rgb(69,69,69));
         -webkit-transition-property: background;
         -webkit-transition-duration: 700ms;
@@ -91,8 +92,8 @@ ul.menu li.active a{
 /*Contact box*/
         p.one {
             background-color: black;
-            width: 300px;
-            height: 420px;
+            width: 390px;
+            height: auto;
             border: 10px solid silver;
             padding: 25px;
             margin: 25px;
@@ -103,9 +104,10 @@ ul.menu li.active a{
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 0;
+  margin: 0px;
   padding: 0;
-  color: antiquewhite;
+  color: white;
+  font-size: 28px;
 }
 
    .item {

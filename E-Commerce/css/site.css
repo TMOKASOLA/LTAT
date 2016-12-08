@@ -55,7 +55,7 @@ div.desc {
     float: left;
     position: absolute;
     width: 994px;
-    height: 97%;
+    height: 104%;
     transition: opacity 3s linear;
     border: 10px outset black;
     border-radius: 19% 19% 19% 19%;
@@ -82,7 +82,7 @@ div.desc {
     border-radius: 18% 18% 18% 18%;
     width: 1012px;
     height: 412px;
-    margin-left: 25%;
+    margin-left: 500px;
 }
 
 .boxInner {

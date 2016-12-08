@@ -4,44 +4,76 @@
     ViewBag.Title = "showResults";
 }
 
-<h2 class="desc">Cart Items</h2>
+<h2 style="color:silver; text-align:center">Cart Items</h2>
 
-<table style="background:#020221; margin-left:80px;" class="table">
-    <tr style="color:white">
-        <th width="25%">
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th width="15%">
-            @Html.DisplayNameFor(model => model.Price)
-        </th>
-   
-        <th width="5%">
-            @Html.DisplayNameFor(model => model.Quantity)
-        </th>
+<style type="text/css">
+    .table {
+      
+        font-size: 32px;
+        width: auto;
+        height: auto;
+        margin-left: 720px;
+       border: 18px solid #ccc;
+       background:#382c2c;
+       
+    }
+</style>
+
+<table  class="table">
+    <tr>
+        <th>
+            <div class="Details">@Html.DisplayNameFor(model => model.Name)</div>
+</th>
+        
+        
+        <th>
+            <div class="Details">   @Html.DisplayNameFor(model => model.Price)</div>
+</th>
+       
+        
+         <th>
+             <div class="Details">  @Html.DisplayNameFor(model => model.Quantity)</div>
+</th>
+
+
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr style="color:white">
-        <td width="25%">
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td width="15%">
-            @Html.DisplayFor(modelItem => item.Price)
-        </td>
- 
-        <td width="5%">
-            @Html.DisplayFor(modelItem => item.Quantity)
-        </td>
-        <td width="5%">
-            <div class="desc">@Html.ActionLink("Remove Item", "RemoveItem", new { Name = item.Name})</div>  
-        </td>
-    </tr>
-}
-    <tr>
-    <td>
-        <div class="desc">Total Price od Products:  @ViewBag.Total</div>
-    </td>
-    </tr>
+    @foreach (var item in Model)
+            {
 
+
+        <tr>
+            <td>
+                <div class="descs"> @Html.DisplayFor(modelItem => item.Name)</div>
+</td>
+            <td style="color:blue;">
+
+                <div style="color:blue;" class="descs">@Html.DisplayFor(modelItem => item.Price)</div>
+</td>
+            <td>
+
+
+                <div class="descs">@Html.DisplayFor(modelItem => item.Quantity)</div>
+</td>
+            <td>
+
+                <div class="descs"> @Html.ActionLink("Remove Item", "RemoveItem", new { Name = item.Name })</div>
+</td>
+        </tr>
+    }
+    <tr>
+        <td>
+            <div class="descs"> Total Price:  @ViewBag.Total</div>
+</td>
+
+        <td>
 </table>
+ 
+
+
+
+
+
+
+@Html.ActionLink("Back to List", "Products")
