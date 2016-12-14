@@ -14,5 +14,21 @@ namespace E_Commerce.Models
             cartInfo.Add(prod);
            // return cartInfo.IndexOf(prod);
         }
+        public string checkExist(string name)
+        {
+            string status = "not found";
+
+            foreach (Cart item in cartInfo)
+            {
+                if (name == item.Description)
+                {
+                    item.Quantity++;
+                    status = "found";
+                }
+
+            }
+            return status;
+        }
+
     }
 }

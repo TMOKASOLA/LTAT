@@ -52,6 +52,21 @@ namespace E_Commerce.Controllers
         {
             return View("About");
         }
+        //public string checkExist(Cart cart)
+        //{
+        //    string status = "";
+
+        //    if (cartmod.cartInfo.Contains(cart))
+        //    {
+        //        cart.Quantity++;
+        //        status = "found";
+        //    }else
+        //    {
+        //        cart.Quantity = 1;
+        //        status = "not found";
+        //    }
+        //    return status;
+        //}
 
         public ActionResult addCart(string Name)
         {
@@ -75,9 +90,12 @@ namespace E_Commerce.Controllers
             cart.Name = prod[recIndex].Name;
             cart.Description = prod[recIndex].Description;
             cart.Price = prod[recIndex].Price;
-            cart.Quantity = 1;
 
-            cartmod.addToCart(cart);
+            if (cartmod.checkExist(cart.Description).Equals("not found") )
+            {
+                cart.Quantity = 1;
+                cartmod.addToCart(cart);
+            }
 
             Session["NumItems"] = cartmod.cartInfo.Count();
             ViewBag.Cart = Session["NumItems"].ToString();
@@ -99,7 +117,7 @@ namespace E_Commerce.Controllers
 
             foreach (var item in list.cartInfo)
             {
-                total = total+ Convert.ToDouble(item.Price);
+                total = total+ (Convert.ToDouble(item.Price) * item.Quantity);
             }
             Session["total"] = total.ToString();
 
